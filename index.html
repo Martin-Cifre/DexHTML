@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeFinder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <headder class="contenedorHead">
+        <a href="">
+            <img src="img/logo.png" alt="logoDex">
+        </a>
+        <form>
+            <div class="grupoFormulario">🔍︎
+                <input type="search" placeholder="Busca tu Pokemon">
+                <buton class="busqueda">Buscar</buton>
+            </div>
+        </form>
+
+    </headder>
+    
+    <div class="filtro contenedor">
+        <div class="filtroIcono">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" class="icono">
+            <path d="M 9 4 C 7.898 4 7 4.898 7 6 L 7 26 C 7 27.102 7.898 28 9 28 L 21 28 C 22.102 28 23 27.102 23 26 L 23 21.908203 C 25.82834 21.427922 28 18.960384 28 16 C 28 13.039616 25.82834 10.572078 23 10.091797 L 23 6 C 23 4.898 22.102 4 21 4 L 9 4 z M 9 6 L 21 6 L 21 10.080078 C 19.539619 10.29395 18.334648 10.961655 17.501953 11.898438 C 16.485347 13.042118 16 14.527778 16 16 C 16 17.472222 16.485347 18.957881 17.501953 20.101562 C 18.334648 21.038345 19.539619 21.70605 21 21.919922 L 21 26 L 9 26 L 9 6 z M 22 12 C 23.865682 12 25.351385 13.28185 25.800781 15 L 23.722656 15 C 23.376387 14.404366 22.738946 14 22 14 C 21.261054 14 20.623613 14.404366 20.277344 15 L 18.169922 15 C 18.321076 14.34128 18.564924 13.713826 18.998047 13.226562 C 19.648107 12.495245 20.583334 12 22 12 z M 18.169922 17 L 20.277344 17 C 20.623613 17.595634 21.261054 18 22 18 C 22.738946 18 23.376387 17.595634 23.722656 17 L 25.800781 17 C 25.351385 18.71815 23.865682 20 22 20 C 20.583334 20 19.648107 19.504756 18.998047 18.773438 C 18.564924 18.286175 18.321076 17.65872 18.169922 17 z M 13 23 L 13 25 L 17 25 L 17 23 L 13 23 z"></path>
+            </svg>
+
+            <span>Filtrar</span>
+        </div>
+    </div>
+    <main class="listaPoke contenedor">
+        <a href="pokemon.html" class="tarjetaPoke">
+            <div class="imgTarjeta">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander">
+            </div>
+
+            <div class="infoTarjeta">
+                <span class="pokeId"> #4</span>
+                <h3>Charmander</h3>
+                <div class="tiposTarjeta">
+                    <span class="fire">Fuego</span>
+                </div>
+            </div>
+
+            <a href="pokemon.html" class="tarjetaPoke">
+            <div class="imgTarjeta">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png" alt="Charmander">
+            </div>
+
+            <div class="infoTarjeta">
+                <span class="pokeId"> #5</span>
+                <h3>Charmaeleon</h3>
+                <div class="tiposTarjeta">
+                    <span class="fire">Fuego</span>
+                </div>
+            </div>
+
+            <a href="pokemon.html" class="tarjetaPoke">
+            <div class="imgTarjeta">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="Charmander">
+            </div>
+
+            <div class="infoTarjeta">
+                <span class="pokeId"> #6</span>
+                <h3>Charizard</h3>
+                <div class="tiposTarjeta">
+                    <span class="fire">Fuego</span>
+                    <span class="flying">Volador</span>
+                </div>
+            </div>
+        </a>
+    </main>
+
+    <div class="contenedorFiltros">
+        <div class="filtrarTipos">
+            <span>Tipo</span>
+            <div class="grupoTipo">
+                <input type="checkbox" name="fire" id="fire">
+                <label for="fire">Fuego</label>
+            </div>
+
+            <div class="grupoTipo">
+                <input type="checkbox" name="flying" id="flying">
+                <label for="flying">Volador</label>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

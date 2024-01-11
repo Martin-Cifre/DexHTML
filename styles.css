@@ -1,0 +1,253 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Open+Sans:wght@800&display=swap');
+
+:root{
+        --color-fire: #ff7402;
+        --color-flying: #3dc7ef;
+        --color-grass: #9bcc50;
+        --color-steel: #9eb7b8;
+        --color-water: #4592c4;
+        --color-ground: #ab9842;
+        --color-ice: #51c4e7;
+        --color-ghost: #4d5b64;
+        --color-normal: #a4acaf;
+        --color-poison: #7e0058;
+        --color-rock: #a38c21;
+        --color-fighting: #d56723;
+        --color-steel: #9eb7b8;
+        --color-dark: #707070;
+        --color-bug: #729f3f;
+        --color-dragon: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+        --color-electric: #bba909;
+        --color-fairy: #fdb9e9;
+        --color-shadow: #7b62a3;
+        --color-unknown: #757575;
+
+        --color-primary: #006d77;
+        --color--primary-hover: #83c5be;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+/* Globales */
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Headder*/
+headder{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.contenedorHead img{
+    width: 200px;
+}
+
+headder form{
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
+.grupoFormulario{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #555;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+
+.grupoFormulario input{
+    font-family: inherit;
+    width: 300px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.busqueda {
+    font-family: inherit;
+}
+
+/* Filtro */
+.filtro contenedor {
+    display: flex;
+
+}
+.filtroIcono {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/*Lista Pokes*/
+
+.listaPoke {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tarjetaPoke{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.imgTarjeta {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 250px;
+}
+
+.imgTarjeta img{
+    width: auto;
+    height: 250px;
+}
+
+.infoTarjeta{
+    padding: 15px;
+}
+
+.infoTarjeta h3{
+    color: #333;
+}
+
+.pokemId{
+    display: block;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.tiposTarjeta{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tiposTarjeta span {
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* tipos */
+.fire{
+    background-color: var(--color-fire);
+}
+
+.flying{
+    background-color: var(--color-flying);
+}
+
+/*Filtros*/
+.contenedorFiltros{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    color: #555;
+    background-color: #f2f2f2;
+    height: 100%;
+    padding-top: 140px;
+    transition: all .3s linear;
+}
+
+.contenedorFiltros.activo{
+    left: 0;
+}
+
+.filtrarTipos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filtrarTipos span{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.grupoTipo {
+    display: flex;
+    gap: 10px;
+    margin-left: 15px ;
+}
+
+.grupoTipo label{
+    cursor: pointer;
+}
+
+.pokeMain {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.pokeMainHead{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.pokeNum {
+    position: absolute;
+    top: -70px;
+    left: 0;
+    font-size: 300px;
+    font-weight: 700;
+    color: var(--color--primary-hover);
+}
+
+.containerImg {
+    padding: 25px 25px 25px 0;
+    order: 2;
+    flex: 1;
+}
+
+.containerImg img{
+    width: 100%;
+}
+
+.containerInfo{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    order: 1;
+}
+
+.containerInfo h1{
+    text-align: right;
+    font-size: 50px;
+}
+
+.infoPoke {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.infoGrupo p{
+    font-weight: 300;
+}
